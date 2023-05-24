@@ -14,7 +14,9 @@ import { MatHeaderCellDef } from '@angular/material/table';
   providedIn: 'root'
 })
 export class HomepageComponent implements OnInit {
-  products: any[] = [];
+  products: any[] = [{ name: 'Product 1', description: 'Description 1' },
+  { name: 'Product 2', description: 'Description 2' },
+  { name: 'Product 3', description: 'Description 3' }];
   displayedColumns : string[] = ['name', 'description', 'actions' ]
   header : "loginpage" | undefined
 
