@@ -1,0 +1,8 @@
+<h3>{{product.name}}</h3>
+<p>{{product.description}}</p>
+<button *ngIf="!isInCart(product)" (click)="addToCart(product)"> Add </button>
+<div *ngIf="isInCart(product)">
+    <button (click)="inQuantity(product)">+</button>
+    <span>{{getQuantity(product)}}</span>
+    <button (click)="deQuantity(product)">-</button>
+</div>
